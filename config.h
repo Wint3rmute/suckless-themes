@@ -84,6 +84,8 @@ static int dmenu_color_counter = 0;
 static char dmenu_current_color[] = "#82AAFF";
 //static char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb",  dmenu_current_color, "-sf", col_gray1, NULL };
 static char *dmenucmd[] = { "rofi", "-show", "drun", NULL };
+// rofi -show Dashboard -modi Dashboard:./dashboard.sh -lines 6 -width 30
+static char *dashboard_cmd[] = { "rofi", "-show", "Dashboard", "-modi", "Dashboard:/home/wint3rmute/code/scripts/dashboard.sh", "-lines", "6", "-width", "30", NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *thunar_cmd[]  = { "thunar", NULL };
 static const char *flameshot_cmd[]  = { "flameshot", "gui", NULL };
